@@ -1,0 +1,6 @@
+@media screen and (max-width: 670px) {
+  #hero-section #search-box {
+    width: auto;
+    flex-direction: column;
+  }
+}

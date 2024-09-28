@@ -10,44 +10,294 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <main>
-      <nav id="navbar">
-        <div class="row">
+      <!-- Navbar starts here -->
+      <nav id="navbar" class="wraper position-relative">
+        <div class="max-container container row align-items-center pt-2 pb-2">
           <div class="col">
             <div class="box1">
-              <img src="/assets/images/vara-nibo.png" alt="Logo" id="logo" />
+              <a href="/index.html">
+                <img src="/assets/images/vara-nibo.png" alt="Logo" id="logo" />
+              </a>
             </div>
           </div>
-          <div class="col">
+          <div class="col d-none d-md-block">
             <div class="box2">
-              <ul class="d-flex list-unstyled">
+              <ul class="d-flex list-unstyled justify-content-evenly m-0">
                 <li>
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/">Lands</a>
+                  <a href="/assets/pages/Lands.html">Lands</a>
                 </li>
                 <li>
-                  <a href="/about.html">About</a>
+                  <a href="/assets/pages/about.html">About</a>
                 </li>
                 <li>
-                  <a href="/">Request</a>
+                  <a href="/assets/pages/Request.html">Request</a>
                 </li>
               </ul>
             </div>
           </div>
+          <div class="col d-md-none">
+            <button class="menu-btn" id="sidebarToggle">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                id="menu-bar-icon"
+                height="30px"
+                width="30px"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-miterlimit="10"
+                  stroke-width="48"
+                  d="M88 152h336M88 256h336M88 360h336"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <div class="sidebar closed" id="mySidebar">
+            <a href="#" class="closebtn" id="closeSidebar">&times;</a>
+            <ul class="d-flex list-unstyled justify-content-evenly m-0">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/assets/pages/Lands.html">Lands</a>
+              </li>
+              <li>
+                <a href="/assets/pages/about.html">About</a>
+              </li>
+              <li>
+                <a href="/assets/pages/Request.html">Request</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <!-- Navbar ends here -->
 
-      <div>
-        <h1>Home Page</h1>
-      </div>
+      <!-- hero section starts here -->
+      <section id="hero-section" class="wraper d-grid">
+        <div
+          class="max-container container container-padding d-flex justify-content-center"
+        >
+          <div class="row row-cols-1 w-100">
+            <div class="col">
+              <h1>Search Your Dream Land</h1>
+            </div>
+            <div class="col mt-2">
+              <div id="search-box">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Location</option>
+                  <option value="1">One</option>
+                </select>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>select Type</option>
+                  <option value="1">One</option>
+                </select>
+                <button id="find-btn">Find</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero section starts here -->
+
+      <!-- Cards Section starts here -->
+      <section id="cards-section" class="wraper container-padding">
+        <div class="max-container container">
+          <h3>Here are a few deals</h3>
+
+          <div
+            id="cards-container"
+            class="container m-auto row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center align-content-center"
+          >
+            <div class="col">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="/assets/images/background-images/abadimage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="container text-box">
+                  <p class="title">
+                    build-ready 3.45-acre lot in the desirable Ceda Creek
+                    Mpountain, Rutherford Country, NC!
+                  </p>
+                  <div class="row row-cols-2">
+                    <div class="col"><span>Status: </span>Available</div>
+                    <div class="col"><span>State: </span>NC</div>
+                    <div class="col"><span>Size: </span>3.45 Acres</div>
+                    <div class="col"><span>Sale price: </span>$24,500</div>
+                  </div>
+                  <button class="details-btn">
+                    <a href="/">View Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="/assets/images/background-images/abadimage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="container text-box">
+                  <p class="title">
+                    build-ready 3.45-acre lot in the desirable Ceda Creek
+                    Mpountain, Rutherford Country, NC!
+                  </p>
+                  <div class="row row-cols-2">
+                    <div class="col"><span>Status: </span>Available</div>
+                    <div class="col"><span>State: </span>NC</div>
+                    <div class="col"><span>Size: </span>3.45 Acres</div>
+                    <div class="col"><span>Sale price: </span>$24,500</div>
+                  </div>
+                  <button class="details-btn">
+                    <a href="/">View Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="/assets/images/background-images/abadimage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="container text-box">
+                  <p class="title">
+                    build-ready 3.45-acre lot in the desirable Ceda Creek
+                    Mpountain, Rutherford Country, NC!
+                  </p>
+                  <div class="row row-cols-2">
+                    <div class="col"><span>Status: </span>Available</div>
+                    <div class="col"><span>State: </span>NC</div>
+                    <div class="col"><span>Size: </span>3.45 Acres</div>
+                    <div class="col"><span>Sale price: </span>$24,500</div>
+                  </div>
+                  <button class="details-btn">
+                    <a href="/">View Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="/assets/images/background-images/abadimage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="container text-box">
+                  <p class="title">
+                    build-ready 3.45-acre lot in the desirable Ceda Creek
+                    Mpountain, Rutherford Country, NC!
+                  </p>
+                  <div class="row row-cols-2">
+                    <div class="col"><span>Status: </span>Available</div>
+                    <div class="col"><span>State: </span>NC</div>
+                    <div class="col"><span>Size: </span>3.45 Acres</div>
+                    <div class="col"><span>Sale price: </span>$24,500</div>
+                  </div>
+                  <button class="details-btn">
+                    <a href="/">View Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="/assets/images/background-images/abadimage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="container text-box">
+                  <p class="title">
+                    build-ready 3.45-acre lot in the desirable Ceda Creek
+                    Mpountain, Rutherford Country, NC!
+                  </p>
+                  <div class="row row-cols-2">
+                    <div class="col"><span>Status: </span>Available</div>
+                    <div class="col"><span>State: </span>NC</div>
+                    <div class="col"><span>Size: </span>3.45 Acres</div>
+                    <div class="col"><span>Sale price: </span>$24,500</div>
+                  </div>
+                  <button class="details-btn">
+                    <a href="/">View Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img-box">
+                  <img
+                    src="/assets/images/background-images/abadimage.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="container text-box">
+                  <p class="title">
+                    build-ready 3.45-acre lot in the desirable Ceda Creek
+                    Mpountain, Rutherford Country, NC!
+                  </p>
+                  <div class="row row-cols-2">
+                    <div class="col"><span>Status: </span>Available</div>
+                    <div class="col"><span>State: </span>NC</div>
+                    <div class="col"><span>Size: </span>3.45 Acres</div>
+                    <div class="col"><span>Sale price: </span>$24,500</div>
+                  </div>
+                  <button class="details-btn">
+                    <a href="/">View Details</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center mt-4">
+            <button class="primary-btn">
+              <a
+                href="/assets/pages/Lands.html"
+                class="text-decoration-none text-white"
+                >All Deals</a
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Cards Section ends here -->
     </main>
+
+    <footer id="Footer" class="wraper">
+      <div class="max-container container">
+        <p class="text-center">
+          © 2024 Optelit.com. All Rights reserved. Terms of Sevice and Privacy
+          Policy
+        </p>
+      </div>
+    </footer>
 
     <!-- Scripts -->
     <script
@@ -55,6 +305,8 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/js/main.js"></script>
+
     <!-- Scripts -->
   </body>
 </html>
