@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/css/global.css" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/request.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
@@ -95,16 +95,73 @@
         >
           <div class="row row-cols-1 w-100">
             <div class="col">
-              <h1>Search Your Dream Land</h1>
+              <h1>Request For Your Lands</h1>
             </div>
           </div>
         </div>
       </section>
       <!-- hero section starts here -->
 
-      <!-- Cards Section starts here -->
-      <section></section>
-      <!-- Cards Section ends here -->
+      <!-- form section starts here -->
+      <div class="container form-container mt-5 mb-5">
+        <form action="">
+          <div class="row">
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="form-name"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="form-email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="form-phone"
+                  name="phone"
+                  placeholder="Phone"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  id="form-message"
+                  name="message"
+                  placeholder="Message"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn primary-btn w-100">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- form section ends here -->
     </main>
 
     <footer id="Footer" class="wraper">

@@ -11,8 +11,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/assets/css/global.css" />
-    <link rel="stylesheet" href="/assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <main>
@@ -103,7 +101,33 @@
       <!-- hero section starts here -->
 
       <!-- Cards Section starts here -->
-      <section></section>
+      <section id="cards-section" class="wraper container-padding">
+        <div class="max-container container">
+          <h3>Here are all the deals</h3>
+
+          <div
+            id="cards-container"
+            class="container m-auto row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 justify-content-center align-content-center"
+          >
+            <!-- Dynamic Cards from lands.js -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="d-flex justify-content-center mt-4">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a id="prev-cards-btn" class="page-link" href="#">Previous</a>
+                </li>
+                <li id="next-cards-btn" class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Pagination -->
+        </div>
+      </section>
       <!-- Cards Section ends here -->
     </main>
 
@@ -123,7 +147,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/main.js"></script>
-
+    <script src="/assets/js/lands.js"></script>
     <!-- Scripts -->
   </body>
 </html>
