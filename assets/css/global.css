@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 
 :root {
   --primary-color: #0ca07b;
@@ -7,6 +8,9 @@
   --dark-gray: #5c5a5a;
   --primary-font: "Poppins", sans-serif;
   --primary-box-shadow: 2px 2px 8px #312f2f38;
+  --primary-border-radiouse: 5px;
+  --secondary-font: "Space Grotesk", sans-serif;
+  --primary-line-height: 28px;
 }
 * {
   font-family: var(--primary-font);
@@ -99,6 +103,7 @@
 }
 
 #cards-section .card {
+  /* height: 100%; */
   padding: 0 0 12px 0;
   font-weight: 600;
   background-color: rgb(226 237 237);
@@ -114,10 +119,7 @@
 }
 #cards-section .card .title {
   font-size: large;
-  font-weight: 600;
-}
-#cards-section .card span {
-  font-weight: bold;
+  font-weight: 500;
 }
 #cards-section .card .details-btn {
   all: unset;
@@ -214,6 +216,25 @@ ul li a {
 .subheading {
   font-weight: 600;
   color: #333333;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-primary-green {
+  color: var(--primary-color);
+}
+.text-primary-green:hover {
+  color: var(--primary-color-dark);
+}
+.text-gray-primary {
+  color: var(--gray);
+}
+.text-gray-secondary {
+  color: var(--dark-gray);
+}
+
+.rounded-primary {
+  border-radius: var(--primary-border-radiouse);
 }
 
 /* Buttons */

@@ -1,10 +1,23 @@
+#detail-card-section .card h2 {
+  font-family: var(--secondary-font);
+}
 #detail-card-section .card {
   box-shadow: var(--primary-box-shadow);
   margin-bottom: 2rem;
 }
 #detail-card-section .text-box p {
+  font-family: var(--secondary-font);
   font-weight: 400;
   color: var(--gray);
+}
+#detail-card-section .text-box .description {
+  color: var(--dark-gray);
+  line-height: var(--primary-line-height);
+}
+
+#detail-card-section option,
+#detail-card-section .inerested {
+  font-family: var(--secondary-font);
 }
 #detail-card-section .icons {
   width: 20px;
@@ -12,10 +25,12 @@
   margin-right: 5px;
 }
 .form-select {
-  background-image: url("/assets/images/icons/share.png");
+  background-image: url("/assets/images/icons/share2.svg");
+  background-position: right;
+  background-size: 60px;
   display: block;
   width: 100%;
-  padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+  padding: 0.375rem 2.75rem 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 600;
   background-color: var(--primary-color);
@@ -27,7 +42,8 @@
   margin-bottom: 2rem;
 }
 .modal input:focus,
-.modal textarea:focus {
+.modal textarea:focus,
+#detail-card-section select:focus {
   box-shadow: none;
 }
 #thanks-modal {
