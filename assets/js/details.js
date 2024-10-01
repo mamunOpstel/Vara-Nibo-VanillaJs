@@ -4,17 +4,27 @@ const nameValue = document.getElementById("form-name");
 const email = document.getElementById("form-email");
 const phone = document.getElementById("form-phone");
 const message = document.getElementById("form-message");
+const thanksmodal = document.getElementById("thanks-modal");
 
 let initialFormData = {};
+
+function toggleThanksModal() {
+  thanksmodal.classList.remove("hidden");
+  setTimeout(() => {
+    thanksmodal.classList.add("hidden");
+    console.log("toggled");
+  }, 1500);
+}
 function handleSubmit() {
   [nameValue, email, phone, message].forEach((inp) => {
     initialFormData[inp.name] = inp.value;
   });
 
-    console.log(initialFormData);
-
-  // Clear form fields
-  [nameValue, email, phone, message].forEach((inp) => {
+  console.log(initialFormData);
+  toggleThanksModal()[
+    // Clear form fields
+    (nameValue, email, phone, message)
+  ].forEach((inp) => {
     inp.value = "";
   });
 }

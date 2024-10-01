@@ -1,3 +1,12 @@
-.form-container{
+.form-container {
     max-width: 700px;
+}
+
+.form-container input:focus,.form-container textarea:focus{
+box-shadow: none;
+}
+
+#Footer {
+  position: absolute;
+  bottom: 0;
 }

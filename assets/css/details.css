@@ -6,13 +6,11 @@
   font-weight: 400;
   color: var(--gray);
 }
-
 #detail-card-section .icons {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
-
 .form-select {
   background-image: url("/assets/images/icons/share.png");
   display: block;
@@ -27,4 +25,36 @@
 .add-img {
   max-width: 250px;
   margin-bottom: 2rem;
+}
+.modal input:focus,
+.modal textarea:focus {
+  box-shadow: none;
+}
+#thanks-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.hidden {
+  display: none;
+}
+#thanks-modal .modal-box {
+  background-color: red;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-size: large;
+  width: 300px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  text-align: center;
+  background-color: whitesmoke;
+  transition: all 0.4s linear;
+}
+#thanks-modal .modal-box p {
+  padding: 0;
+  margin: 0;
 }

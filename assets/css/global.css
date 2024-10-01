@@ -6,7 +6,7 @@
   --gray: #808080;
   --dark-gray: #5c5a5a;
   --primary-font: "Poppins", sans-serif;
-  --primary-box-shadow: 1px 1px 8px #0000009e;
+  --primary-box-shadow: 2px 2px 8px #312f2f38;
 }
 * {
   font-family: var(--primary-font);
@@ -104,7 +104,7 @@
   background-color: rgb(226 237 237);
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 1px 1px 8px #0000009e;
+  box-shadow: var(--primary-box-shadow);
 }
 #cards-section .card img {
   width: 100%;

@@ -3,10 +3,13 @@
   width: 500px;
   margin: auto;
   display: flex;
-  gap: 4px;
+  gap: 8px;
   background-color: white;
   padding: 12px;
   border-radius: 5px;
+}
+#hero-section #search-box select:focus{
+  box-shadow: none;
 }
 
 #hero-section #search-box #find-btn {
