@@ -151,17 +151,52 @@
                     3.5 Acers
                   </p>
                 </div>
-                <div class="container btn-box d-flex">
-                  <select
-                    class="form-select w-auto"
-                    aria-label="Default select example"
+
+                <div class="container btn-box d-flex dropdown">
+                  <button
+                    class="dropdown-toggle share-btn"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
-                    <option value="" selected disabled></option>
-                    <!-- Add this line to make the first option empty -->
-                    <option value="1">FaceBook</option>
-                    <option value="2">Instagram</option>
-                    <option value="3">Twittter</option>
-                  </select>
+                    <img
+                      src="/assets/images/icons/share 4.png"
+                      alt=""
+                      class="share-btn-icon"
+                    />
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="https://www.facebook.com/" target="_blank">
+                        <img
+                          src="/assets/images/icons/facebook.png"
+                          alt=""
+                          class="facebook-share-icon share-icons"
+                        />
+                        Facebook
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="https://www.instagram.com/" target="_blank">
+                        <img
+                          src="/assets/images/icons/instagram.png"
+                          alt=""
+                          class="instagram-share-icon share-icons"
+                        />
+                        Instagram
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="https://x.com/?lang=en" target="_blank">
+                        <img
+                          src="/assets/images/icons/twitter.png"
+                          alt=""
+                          class="twitter-share-icon share-icons"
+                        />
+                        Twitter
+                      </a>
+                    </li>
+                  </ul>
                   <button
                     type="button"
                     class="primary-btn inerested"

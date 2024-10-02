@@ -24,19 +24,34 @@
   height: 20px;
   margin-right: 5px;
 }
-.form-select {
-  background-image: url("/assets/images/icons/share2.svg");
-  background-position: right;
-  background-size: 60px;
-  display: block;
-  width: 100%;
-  padding: 0.375rem 2.75rem 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 600;
+/* Share Dropdown */
+.share-btn {
+  all: unset;
+  padding: 5px;
+  border-radius: var(--primary-border-radiouse);
+  color: white;
   background-color: var(--primary-color);
   margin-right: 5px;
-  color: white;
 }
+.share-btn-icon {
+  width: 30px;
+  height:30px;
+}
+.dropdown-menu {
+  background-color: var(--primary-color);
+}
+.dropdown-menu li {
+  width: auto;
+}
+.dropdown-menu li a:hover {
+  background-color: var(--primary-color-dark);
+}
+.share-icons {
+  width: 25px;
+  height: 25px;
+  margin-right: 3px;
+}
+/* Share Dropdown */
 .add-img {
   max-width: 250px;
   margin-bottom: 2rem;
